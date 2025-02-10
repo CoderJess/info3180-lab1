@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" /> 
     <title>My Website - About</title>
 </head>
 <body>
-    <h1>Shaquille Thomas</h1> 
-    <p>
-        Hello, I'm Shaquille. I am a Computer Science student, studying at
-        the University of the West Indies. As a coding enthusiast, I enjoy
-        software/web development, with experiences in languages such as python, 
-        java, javascript, c, php and frameworks such as reactjs, nodejs and django.
-        I also often like to engage in learning new technologies in order to widen my 
-        spectrum. I hope to work as a Software Developer in the near future, in aims 
-        of helping to create new technologies.
-    </p> 
+    <div class="container">
+        <div class="header">
+            <img src="{{ url_for('static', filename='image/web-developer-image.webp') }}" alt="web-developer-image">
+            <h1>
+                Shaquille Thomas
+            </h1>
+        </div>  
+        <p>
+            Hello, I'm Shaquille. I am a Computer Science student, studying at
+            the University of the West Indies. As a coding enthusiast, I enjoy
+            software/web development, with experiences in languages such as python, 
+            java, javascript, c, php and frameworks such as reactjs, nodejs and django.
+            I also often like to engage in learning new technologies in order to widen my 
+            spectrum. I hope to work as a Software Developer in the near future, in aims 
+            of helping to create new technologies.
+        </p>
+    </div>
 </body>
 </html>
